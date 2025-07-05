@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Teknik Informatika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #A0C1B8 0%, #729B8D 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .skill-pill:hover {
+            background-color: #4f46e5;
+        }
+        body {
+      scroll-behavior: smooth;
+    }
+             
+        /* Sticky navbar styles */
+        
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+
+      <nav class="sticky top-0 bg-white shadow-sm py-4">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+       <div class="text-xl font-bold text-gray-800">Portofolio</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-gray-900">Beranda</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900">Proyek</a>
+                <a href="#skills" class="text-gray-600 hover:text-gray-900">Keterampilan</a>
+                
+                
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    </div>
+  </nav>
+    <!-- <nav class="navbar-sticky bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">Portofolio</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-gray-900">Tentang</a>
+                <a href="#skills" class="text-gray-600 hover:text-gray-900">Keterampilan</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900">Proyek</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900">Kontak</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+ <!-- <div class="min-h-screen flex flex-col items-center justify-center px-6">
+    <div class="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10"> -->
+      
+      <!-- FOTO -->
+      <!-- <div class="flex-shrink-0">
+        <img src="propile.png" alt="Astri Pitriana Mustika" 
+             class="w-60 h-80 object-cover rounded-md shadow-md border">
+      </div> -->
+       <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="images/propile.png" alt="Astri Fitriana - Software Engineer" 
+             class="w-60 h-80 object-cover rounded-md shadow-md border">
+      </div>
+
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl mb-2">Halo, Saya</h2>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Astri Fitriana Mustika</h1>
+                
+                    <p class="text-lg md:text-xl mb-6">Saya sedang menempuh studi di semester 6, Saya tertarik dengan Web Development dan Android development, saat ini mahir menggunakan framework laravel, php, java. Saya berdomisili di Bandung, Jawa Barat.</p>
+                    <a href="about.html" 
+                    <button class="bg-white text-[#729B8D] hover:bg-gray-100 font-medium py-2 px-6 rounded-full transition mr-4">
+                            Tentang Saya
+                        </button> </a>
+                         <div class="mt-8 flex justify-center md:justify-start space-x-6 text-white text-2xl">
+          <a href="https://github.com/Astripitriana" target="_blank" class="hover:text-gray-300 transition">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/astripitrianamustika" target="_blank" class="hover:text-gray-300 transition">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:astriptrianaa@gmail.com" class="hover:text-gray-300 transition">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+                    <!-- <p class="text-base md:text-lg max-w-lg">
+                        Passionate about solving complex problems through code and building seamless user experiences.
+                    </p> -->
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">My Journey in Tech</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/faadc9de-2ddb-458f-a81e-65164ddbe86e.png" alt="Ilustrasi programmer sedang bekerja di depan komputer dengan kode yang terlihat di layar" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Profil Profesional</h3>
+                    <p class="text-gray-600 mb-6">
+                        Saya adalah mahasiswa aktif semester 6 di Program Studi Sistem Informasi. Tertarik dalam pengembangan website, khususnya pada pengembangan backend dan frontend menggunakan Framework Laravel. Saya memiliki pemahaman yang baik dalam membuat tampilan yang responsif dan fungsional, serta terus mengembangkan kemampuan saya melalui berbagai proyek pembelajaran.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Pendidikan</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h5 class="font-medium text-gray-800">STMIK Mardira Indonesia</h5>
+                            <p class="text-gray-600">Teknik Informatika - Sistem Informasi | 2022 - Sekarang</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Tujuan Karir</h4>
+                        <p class="text-gray-600">
+                           Saya ingin menjadi seorang pengembang perangkat lunak yang mampu memberikan solusi teknologi yang bermanfaat, serta berdampak positif bagi masyarakat. Saya berkomitmen untuk terus belajar, berkembang, dan memberikan kontribusi nyata di dunia teknologi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Certifications Section -->
+    <!-- <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Sertifikasi</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center">
+                    <img src="images/cert-aws.jpg" alt="Sertifikat AWS" class="mb-3">
+                    <p class="font-medium text-center">AWS Certified</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center">
+                    <img src="images/cert-google.jpg" alt="Sertifikat Google" class="mb-3">
+                    <p class="font-medium text-center">Google Cloud</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center">
+                    <img src="images/cert-azure.jpg" alt="Sertifikat Microsoft" class="mb-3">
+                    <p class="font-medium text-center">Microsoft Azure</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center">
+                    <img src="images/cert-scrum.jpg" alt="Sertifikat Scrum" class="mb-3">
+                    <p class="font-medium text-center">Scrum Master</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Proyek Saya</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                Berikut beberapa proyek yang telah saya kerjakan selama studi dan pembelajaran mandiri.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/kasir.jpeg" alt="Tampilan antarmuka aplikasi web dengan dashboard dan beberapa grafik statistik" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Website</h3>
+                        <p class="text-gray-600 mb-4">
+                            Berbagai hasil website dari tugas-tugas mata kuliah yang telah saya selesaikan, disusun secara rapi agar mudah dilihat dan ditinjau.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Flutter</span>
+                            
+                        </div>
+                        <a href="kasir.html" class="text-blue-600 hover:text-blue-800 font-medium">Lihat Detail →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/UI.jpeg" alt="Tampilan aplikasi mobile dengan daftar tugas dan kalender" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">UI/UX Design</h3>
+                        <p class="text-gray-600 mb-4">
+                           Berbagai hasil desain UI/UX dari tugas-tugas mata kuliah yang telah saya selesaikan, disusun secara rapi agar mudah dilihat dan ditinjau.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Figma</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Canva</span>
+                           
+                        </div>
+                        <a href="ui.html" class="text-blue-600 hover:text-blue-800 font-medium">Lihat Detail →</a>
+                    </div>
+                </div>
+                
+                <!-- Project Placeholder -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <p class="text-gray-600">Proyek baru sedang dikerjakan</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Proyek Baru</h3>
+                        <p class="text-gray-600 mb-4">
+                            Deskripsi proyek akan tersedia segera setelah proyek ini selesai dikembangkan.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Keterampilan Teknis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Bahasa Pemrograman</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-[#A0C1B8] bg-opacity-30 text-[#3D5A50] px-4 py-2 rounded-full transition">Java</span>
+                        <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full transition">Python</span>
+                        <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full transition">JavaScript</span>
+                        <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full transition">C++</span>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Pengembangan Web</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">HTML/CSS</span>
+                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">React</span>
+                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">Node.js</span>
+                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">Framework Laravel</span>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Keterampilan Lainnya</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Git</span>
+                        <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">SQL</span>
+                        <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">UI/UX Design</span>
+                        <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Microsoft Word</span>
+                         <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Microsoft Excel</span>
+                         <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Canva</span>
+                         <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Figma</span>
+                         <span class="skill-pill bg-green-100 text-green-800 px-4 py-2 rounded-full transition">Adobe Flash</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-3xl font-bold text-[#729B8D]">5+</div>
+                    <p class="text-gray-600">Proyek Selesai</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-3xl font-bold text-[#729B8D]">10+</div>
+                    <p class="text-gray-600">Teknologi Dikuasai</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-3xl font-bold text-[#729B8D]">3+</div>
+                    <p class="text-gray-600">Tahun Pengalaman</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-3xl font-bold text-[#729B8D]">100%</div>
+                    <p class="text-gray-600">Dedikasi</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    
+
+    <!-- Blog Section -->
+    <!-- <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Artikel Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="images/blog-ml.jpg" alt="Artikel Teknologi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Panduan Machine Learning</h3>
+                        <p class="text-gray-600 mb-4">Memulai perjalanan machine learning dengan Python dan TensorFlow.</p>
+                        <a href="#" class="text-[#729B8D] hover:underline font-medium">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="images/blog-optimization.jpg" alt="Artikel Teknologi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Optimasi Website</h3>
+                        <p class="text-gray-600 mb-4">Teknik-teknik meningkatkan performa website secara signifikan.</p>
+                        <a href="#" class="text-[#729B8D] hover:underline font-medium">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="images/blog-ai.jpg" alt="Artikel Teknologi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Trend AI 2023</h3>
+                        <p class="text-gray-600 mb-4">Prediksi perkembangan AI di tahun-tahun mendatang.</p>
+                        <a href="#" class="text-[#729B8D] hover:underline font-medium">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12">Hubungi Saya</h2>
+            <div class="max-w-2xl mx-auto">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="_subject" value="Pesan dari Portfolio">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-white bg-opacity-10 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Alamat Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-white bg-opacity-10 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2">Pesan</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-white bg-opacity-10 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-white text-blue-600 hover:bg-gray-100 font-medium py-2 px-8 rounded-full transition">
+                            Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Testimoni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="images/client-1.jpg" alt="Client photo" class="rounded-full w-12 h-12 mr-4">
+                        <div>
+                            <h4 class="font-semibold">Nama Klien</h4>
+                            <p class="text-gray-600 text-sm">Direktur Perusahaan</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Kerja profesional dan hasilnya melebihi ekspektasi kami."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="images/client-2.jpg" alt="Client photo" class="rounded-full w-12 h-12 mr-4">
+                        <div>
+                            <h4 class="font-semibold">Nama Dosen</h4>
+                            <p class="text-gray-600 text-sm">Pembimbing Akademik</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Siswa berbakat dengan kemampuan pemecahan masalah yang luar biasa."</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+     
+   <footer class="bg-gradient-to-r from-[#274D4F] to-[#5A837C] text-white text-sm py-4">
+  <div class="text-center">
+    <p>© 2025 Astri Fitriana Mustika</p>
+  </div>
+</footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('button[class*="md:hidden"]').addEventListener('click', function() {
+            const menu = document.querySelector('div[class*="hidden md:flex"]');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('right-6');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('rounded-lg');
+            menu.classList.toggle('shadow-md');
+            menu.classList.toggle('space-y-3');
+            menu.classList.toggle('space-x-0');
+        });
+          window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('nav');
+    if (window.scrollY > 10) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+
+
+</script>
+</body>
+</html>
