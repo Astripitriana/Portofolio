@@ -16,7 +16,8 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
         .skill-pill:hover {
-            background-color: #4f46e5;
+            background-color: #d6336c;
+            color: white;
         }
         body {
       scroll-behavior: smooth;
@@ -27,53 +28,25 @@
     </style>
 </head>
 
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-gray-50 text-[#333]">
     <!-- Navigation -->
 
       <nav class="sticky top-0 bg-white shadow-sm py-4">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-       <div class="text-xl font-bold text-gray-800">Portofolio</div>
+       <div class="text-xl font-bold text-[#111]">Portofolio</div>
             <div class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-gray-900">Beranda</a>
-                <a href="#projects" class="text-gray-600 hover:text-gray-900">Proyek</a>
-                <a href="#skills" class="text-gray-600 hover:text-gray-900">Keterampilan</a>
-                
-                
+                <a href="#about" class="text-gray-600 hover:text-[#d6336c]">Beranda</a>
+                <a href="#projects" class="text-gray-600 hover:text-[#d6336c]">Proyek</a>
+                <a href="#skills" class="text-gray-600 hover:text-[#d6336c]">Keterampilan</a>
+              
             </div>
             <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
+                 <i class="fas fa-bars text-gray-600 text-xl"></i>
             </button>
     </div>
   </nav>
-    <!-- <nav class="navbar-sticky bg-white shadow-sm py-4">
-        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
-            <div class="text-xl font-bold text-gray-800">Portofolio</div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-gray-900">Tentang</a>
-                <a href="#skills" class="text-gray-600 hover:text-gray-900">Keterampilan</a>
-                <a href="#projects" class="text-gray-600 hover:text-gray-900">Proyek</a>
-                <a href="#contact" class="text-gray-600 hover:text-gray-900">Kontak</a>
-            </div>
-            <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-    </nav> -->
-
-    <!-- Hero Section -->
- <!-- <div class="min-h-screen flex flex-col items-center justify-center px-6">
-    <div class="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10"> -->
-      
-      <!-- FOTO -->
-      <!-- <div class="flex-shrink-0">
-        <img src="propile.png" alt="Astri Pitriana Mustika" 
-             class="w-60 h-80 object-cover rounded-md shadow-md border">
-      </div> -->
-       <section class="gradient-bg text-white py-20">
+ 
+       <section class="gradient-bg text-[#111] py-20">
         <div class="container mx-auto px-6 md:px-12 text-center">
     <div class="flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-8 md:mb-0">
@@ -90,61 +63,25 @@
                     <button class="bg-white text-[#d6336c] hover:bg-gray-100 font-medium py-2 px-6 rounded-full transition mr-4">
                             Tentang Saya
                         </button> </a>
-                         <div class="mt-8 flex justify-center md:justify-start space-x-6 text-white text-2xl">
-          <a href="https://github.com/Astripitriana" target="_blank" class="hover:text-gray-300 transition">
+                         <div class="mt-8 flex justify-center md:justify-start space-x-6 text-[#d6336c] text-2xl">
+          <a href="https://github.com/Astripitriana" target="_blank" class="hover:text-[#b02050] transition">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/astripitrianamustika" target="_blank" class="hover:text-gray-300 transition">
+          <a href="https://www.linkedin.com/in/astripitrianamustika" target="_blank" class="hover:text-[#b02050] transition">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:astriptrianaa@gmail.com" class="hover:text-gray-300 transition">
+          <a href="mailto:astriptrianaa@gmail.com" class="hover:text-[#b02050] transition">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
-                    <!-- <p class="text-base md:text-lg max-w-lg">
-                        Passionate about solving complex problems through code and building seamless user experiences.
-                    </p> -->
-        
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <!-- <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-6 md:px-12">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">My Journey in Tech</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/faadc9de-2ddb-458f-a81e-65164ddbe86e.png" alt="Ilustrasi programmer sedang bekerja di depan komputer dengan kode yang terlihat di layar" class="rounded-lg shadow-md w-full">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Profil Profesional</h3>
-                    <p class="text-gray-600 mb-6">
-                        Saya adalah mahasiswa aktif semester 6 di Program Studi Sistem Informasi. Tertarik dalam pengembangan website, khususnya pada pengembangan backend dan frontend menggunakan Framework Laravel. Saya memiliki pemahaman yang baik dalam membuat tampilan yang responsif dan fungsional, serta terus mengembangkan kemampuan saya melalui berbagai proyek pembelajaran.
-                    </p>
-                    <div class="mb-6">
-                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Pendidikan</h4>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h5 class="font-medium text-gray-800">STMIK Mardira Indonesia</h5>
-                            <p class="text-gray-600">Teknik Informatika - Sistem Informasi | 2022 - Sekarang</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Tujuan Karir</h4>
-                        <p class="text-gray-600">
-                           Saya ingin menjadi seorang pengembang perangkat lunak yang mampu memberikan solusi teknologi yang bermanfaat, serta berdampak positif bagi masyarakat. Saya berkomitmen untuk terus belajar, berkembang, dan memberikan kontribusi nyata di dunia teknologi.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <section id="projects" class="py-16 bg-white">
         <div class="container mx-auto px-6 md:px-12">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Proyek Saya</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#111]">Proyek Saya</h2>
             <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
                 Berikut beberapa proyek yang telah saya kerjakan selama studi dan pembelajaran mandiri.
             </p>
@@ -156,18 +93,18 @@
                         <img src="images/kasir.jpeg" alt="Tampilan antarmuka aplikasi web dengan dashboard dan beberapa grafik statistik" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Website</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-[#111]">Project Website</h3>
+                        <p class="text-[#555] mb-4">
                             Berbagai hasil website dari tugas-tugas mata kuliah yang telah saya selesaikan, disusun secara rapi agar mudah dilihat dan ditinjau.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Laravel</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
-                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Flutter</span>
+                            <span class="text-xs bg-pink-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-pink-100 text-blue-800 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs bg-pink-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                             <span class="text-xs bg-pink-100 text-blue-800 px-2 py-1 rounded">Flutter</span>
                             
                         </div>
-                        <a href="proyek1.html" class="text-blue-600 hover:text-blue-800 font-medium">Lihat Detail →</a>
+                        <a href="proyek1.html" class="text-[#d6336c] hover:text-[#b02050] font-medium">Lihat Detail →</a>
                     </div>
                 </div>
                 
@@ -177,8 +114,8 @@
                         <img src="images/UI.jpeg" alt="Tampilan aplikasi mobile dengan daftar tugas dan kalender" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">UI/UX Design</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-[#111]">UI/UX Design</h3>
+                        <p class="text-[#555] mb-4">
                            Berbagai hasil desain UI/UX dari tugas-tugas mata kuliah yang telah saya selesaikan, disusun secara rapi agar mudah dilihat dan ditinjau.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -186,7 +123,7 @@
                             <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Canva</span>
                            
                         </div>
-                        <a href="proyek2.html" class="text-blue-600 hover:text-blue-800 font-medium">Lihat Detail →</a>
+                        <a href="proyek2.html" class="text-[#d6336c] hover:text-[#b02050] font-medium">Lihat Detail →</a>
                     </div>
                 </div>
                 
@@ -197,16 +134,16 @@
                             <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                             </svg>
-                            <p class="text-gray-600">Proyek baru sedang dikerjakan</p>
+                            <p class="text-[#555]">Proyek baru sedang dikerjakan</p>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Proyek Baru</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-[#111]">Proyek Baru</h3>
+                        <p class="text-[#555] mb-4">
                             Deskripsi proyek akan tersedia segera setelah proyek ini selesai dikembangkan.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Coming Soon</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Coming Soon</span>
                         </div>
                     </div>
                 </div>
@@ -219,11 +156,11 @@
     <!-- Skills Section -->
     <section id="skills" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6 md:px-12">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Keterampilan Teknis</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#111]">Keterampilan Teknis</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Programming Languages -->
                 <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Bahasa Pemrograman</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-[#111]">Bahasa Pemrograman</h3>
                     <div class="flex flex-wrap gap-3">
                         <span class="skill-pill bg-[#A0C1B8] bg-opacity-30 text-[#3D5A50] px-4 py-2 rounded-full transition">Java</span>
                         <span class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full transition">Python</span>
@@ -234,12 +171,12 @@
                 
                 <!-- Web Development -->
                 <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Pengembangan Web</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-[#111]">Pengembangan Web</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">HTML/CSS</span>
-                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">React</span>
-                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">Node.js</span>
-                        <span class="skill-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition">Framework Laravel</span>
+                        <span class="skill-pill bg-pink-100 text-pink-800 px-4 py-2 rounded-full">HTML/CSS</span>
+                        <span class="skill-pill bg-pink-100 text-pink-800 px-4 py-2 rounded-full">React</span>
+                        <span class="skill-pill bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Node.js</span>
+                        <span class="skill-pill bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Framework Laravel</span>
                     </div>
                 </div>
                 
